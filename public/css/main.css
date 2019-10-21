@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%; }
+
+.nav {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; }
+  .nav__logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1b1b1b;
+    padding: 1rem 1.5rem;
+    display: inline-block; }
+  .nav__button {
+    background-color: #009688;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 1.8rem;
+    border-radius: .2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    justify-self: end;
+    margin-right: 1.5rem; }
+    .nav__button:hover {
+      box-shadow: 0 3px 28px rgba(0, 0, 0, 0.25), 0 5px 3px rgba(0, 0, 0, 0.22); }
+
+.card {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .card:hover {
+    box-shadow: 0 3px 28px rgba(0, 0, 0, 0.25), 0 5px 3px rgba(0, 0, 0, 0.22); }

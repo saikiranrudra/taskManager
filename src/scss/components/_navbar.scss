@@ -1,0 +1,19 @@
+.nav {
+    @include shadow(0);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    &__logo {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $color-logo;
+        padding: 1rem 1.5rem;
+        display: inline-block;
+    }
+
+    &__button {
+        @include button();
+        justify-self: end;        
+        margin-right: 1.5rem;
+    }
+}
