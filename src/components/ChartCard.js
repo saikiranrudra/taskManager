@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 class ChartCard extends Component {
   render() {
-    return <div className="card">ChartCard</div>;
+    return (
+      <div className="card chart">
+        <div className="card__title">{this.props.title}</div>
+      </div>
+    );
   }
 }
 

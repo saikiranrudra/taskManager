@@ -14,15 +14,24 @@ body {
   /*basic setup remove after app completion*/
   height: 100vh; }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6.7rem 1fr 1fr; }
+
 .nav {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  background-color: #fff; }
+  padding: 1.2rem 0;
+  background-color: #fff;
+  align-self: center;
+  grid-column: 1 / -1;
+  margin-bottom: .5rem; }
   .nav__logo {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 800;
     color: #2b2f33;
     padding: 1rem 1.5rem;
     display: inline-block; }
@@ -39,7 +48,7 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     justify-self: end;
-    margin-right: 1.5rem; }
+    margin-right: 1.2rem; }
     .nav__button:hover {
       box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.46); }
 
@@ -47,6 +56,60 @@ body {
   display: inline-block;
   padding: 1rem 1.5rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: #fff;
+  margin: .5rem;
+  border-radius: .3rem; }
   .card:hover {
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.46); }
+  .card__title {
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(100, 100, 100, 0.3);
+    padding-bottom: 1rem; }
+
+.chart {
+  grid-row: 2 / -1;
+  grid-column: 3 / 4; }
+
+.task {
+  display: grid;
+  grid-template-columns: 1fr 4rem;
+  grid-template-rows: 1fr 3rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  transition: all .3s; }
+  .task__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: #242424;
+    cursor: pointer; }
+  .task__description {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #3d3d3d; }
+  .task__priority {
+    background-color: #EB5757;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+    justify-self: center; }
+
+.task__features {
+  display: flex;
+  grid-column: 1 / -1; }
+
+.delete {
+  color: #EB5757; }
+
+.done {
+  color: #29c271;
+  margin-left: 2rem; }
+
+.edit {
+  color: #10c9e2;
+  margin-left: auto;
+  margin-right: 1rem; }

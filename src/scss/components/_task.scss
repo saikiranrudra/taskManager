@@ -1,0 +1,47 @@
+.task {
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+    grid-template-rows: 1fr 3rem;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: .3rem; 
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+        color: rgb(36, 36, 36);
+        cursor: pointer;
+    }
+    &__description {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: rgb(61, 61, 61);
+    }
+    &__priority {
+        background-color: $priority-urgent;
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 10rem;
+        justify-self: center;
+    }
+}
+
+.task__features {
+    display: flex;
+    grid-column: 1 / -1;
+}
+
+.delete {
+    color: $color-delete;
+}
+.done {
+    color: $color-done;
+    margin-left: 2rem;
+}
+.edit {
+    color: $color-edit;
+    margin-left: auto;
+    margin-right: 1rem;
+}

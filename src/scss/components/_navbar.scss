@@ -5,9 +5,12 @@
     align-items: center;
     padding: 1.2rem 0;
     background-color: $color-nav;
+    align-self: center;
+    grid-column: 1 / -1;
+    margin-bottom: .5rem;
     &__logo {
         font-size: 1.8rem;
-        font-weight: 600;
+        font-weight: 800;
         color: $color-logo;
         padding: 1rem 1.5rem;
         display: inline-block;

@@ -8,11 +8,11 @@ class App extends Component {
     return (
       <div className="grid">
         <NavBar />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <ChartCard />
+        <TaskCard title="Task List" />
+        <TaskCard title="Urgent" />
+        <TaskCard title="Important" />
+        <TaskCard title="Not Important" />
+        <ChartCard title="Task Chart" />
       </div>
     );
   }
